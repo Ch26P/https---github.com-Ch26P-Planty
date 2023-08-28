@@ -1,0 +1,218 @@
+
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+/* Import de la font 'syne' depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body* {
+  
+   font-family:'syne', sans-serif;
+ }
+/*font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;*/
+
+
+/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
+
+
+
+
+/*menu header*/
+div.header-inner{
+   margin:0;
+   padding:0;
+   width: 100%;
+   max-width: 100%;
+}
+
+
+ul.primary-menu {
+   display: flex;
+
+margin: 0 0 0 0 ;
+
+}
+.menu-item-167{
+   background:#E0B9B4;
+}
+
+
+.primary-menu li.current-menu-item a{
+   
+   
+ text-decoration:none !important;
+
+
+}
+.primary-menu  li a:hover{
+   background:#C02E44;
+   color: white!important;
+
+}
+.primary-menu  li a{
+text-decoration: none;
+ padding-top: 2em;
+padding-right: 3em;
+ padding-bottom:2em;
+  padding-left: 3em;
+  color: black !important;
+}
+.primary-menu li{
+   margin: 0;
+   
+}
+header.entry-header{
+   display:none;
+
+}
+/*logo*/
+.custom-logo{
+height:40px
+}
+/*main*/
+.hover-effect img {
+   transition: all 0.33s ease-in-out;
+   transform: scale(1) translateY(0px);
+}
+.hover-effect img:hover {
+   transition: all 0.33s ease-in-out;
+   transform: scale(1.05) translateY(-10px);
+}
+/**fond et effet de fond*/
+.font-gris {
+background-color:  #ECE2DA;
+margin-top:0;
+
+}
+.courbe-font{
+   /*border-radius: 0% 0% 10% 10%;
+border-radius:0 0 35em/3em  35em/3em;*/
+border-bottom-right-radius: 55em 3em;
+border-bottom-left-radius: 55em 3em;
+/*border-bottom: solid 10px;*/
+padding: 30px 0 30px 0 ;
+}
+.ombrebas{
+   box-shadow: 10px 5px 0 5px   #f2dac6;
+   ;
+}
+
+/*   */
+
+h1,h2,h3{
+color:  #3B8E46;
+
+}
+
+.titrerouge{
+   color:#C02E44;
+}
+/*deplacer des element */
+.elementg{
+position: relative;
+left: 18%;
+z-index:1;
+}
+.elementd{
+position: relative;
+right: 18%;
+z-index: 2;
+}
+.elemntc{
+z-index:3;
+}
+.boutons a{
+background:#E0B9B4  !important;
+color:#fff;
+
+}
+.boutons a:hover{
+background:#C02E44 !important;
+border:none;
+text-decoration: none !important;
+}
+.text1accueil{
+padding:30px 30px 30px 30px;
+}
+.textacceuil{
+padding: 0 15px 0 15px;
+}
+.deplace-fleur{
+position: relative;
+top:90px ;
+right: 40%;
+}
+.bloc-equipe{
+padding-bottom:-20px;
+margin-bottom: 50px;
+}
+.deplace-tige{
+position: relative;
+bottom: 170px;
+left: 40%;
+}
+.deplace-plante{
+position: relative;
+bottom: 170px;
+right: 210px;
+bottom: 210px;
+z-index:0;
+}
+.contact{
+position: relative;
+z-index: 1;
+}
+.bandeau-canettes{
+position: relative;
+z-index: 0;
+}
+.canette1{
+position: relative;
+top: 200px;
+z-index: 1;
+padding: -20px;
+}
+
+@media (min-width: 1220px){
+  .entry-content  .alignfull{
+      margin-top: 0;
+      margin-bottom: 0;
+
+}
+.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+}
+}
+@media (min-width: 1000px){
+   .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+      margin-top: 0;
+      margin-bottom: 0;
+
+}
+.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+}
+}
+@media (min-width: 700px){
+   .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+      margin-top: 0;
+      margin-bottom: 0;
+
+}
+.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+}
+}
