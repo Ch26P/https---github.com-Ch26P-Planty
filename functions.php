@@ -15,13 +15,24 @@
         $locations = array(
      
             'main-footer'   => __( 'Footer principale', 'planty' ),
-
+            'main-header'   => __( 'header principale', 'planty' ),
         );
     
         register_nav_menus( $locations );
     }
     
     add_action( 'init', 'planty_menus' );
+
+
+
+    function add_admin_link_to_menu($items, $args) {
+        if (is_user_logged_in() && current_user_can('administrator') && $args->theme_location == 'primary') {
+            $admin_url = admin_url();
+            $items .= '<li><a href="' . esc_url($admin_url) . '">Admin</a></li>';
+        }
+        return $items;
+    }
+    add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
     /*Chargement des widgets */
 
 

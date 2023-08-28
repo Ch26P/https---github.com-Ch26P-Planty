@@ -115,6 +115,17 @@
 								?>
 
 								</ul>
+								<ul class="header-menu-commander">
+								<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'main-header',
+					)
+				);
+				?>
+
+
+							</ul>
 
 							</nav><!-- .primary-menu-wrapper -->
 
