@@ -9,8 +9,19 @@
         wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css',
         array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
     }
+/*hook*/
+    function planty_menus() {
 
+        $locations = array(
+     
+            'main-footer'   => __( 'Footer principale', 'planty' ),
 
+        );
+    
+        register_nav_menus( $locations );
+    }
+    
+    add_action( 'init', 'planty_menus' );
     /*Chargement des widgets */
 
 

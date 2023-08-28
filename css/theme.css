@@ -216,3 +216,18 @@ padding: -20px;
    padding-bottom: 0;
 }
 }
+/**footer**/
+/**avec menu footer**/
+.footer-menu li a{
+   color:black;
+   text-align: center;
+}
+.footer-top {
+   justify-content: center;
+}
+/**footer modifier**/
+#site-footer a{
+color: black;
+text-align: center;
+
+}
