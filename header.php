@@ -127,20 +127,7 @@
 								}
 								?>
 
-						<!---->		</ul>
-								<ul class="header-menu-commander  reset-list-style">
-								<?php
-									wp_nav_menu(
-										array(
-											'container'  => '',
-											'items_wrap' => '%3$s',
-											'theme_location' => 'main-header',
-										)
-										);
-								?>
-
-
-							</ul>
+	
 
 							</nav><!-- .primary-menu-wrapper -->
 
