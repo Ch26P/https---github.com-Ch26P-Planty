@@ -262,3 +262,95 @@ color: black;
 text-align: center;
 
 }
+/**formulaire de commande**/
+.wpcf7{
+   max-width: 100% !important;
+   width: 100% !important;
+}
+form.wpcf7-form {
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+background: #3B8E46; /* Couleur du fond du formulaire */
+color: white !important; /* Couleur de texte des étiquettes */
+width:100%;
+}
+form.wpcf7-form h1,h2,h3{
+
+
+   color: white !important; /* Couleur de texte des étiquettes */
+   }
+
+
+.Fruits{
+text-align: center;
+padding: 5px 15px 5px 15px;
+
+}
+.tailleimagefruits{
+   padding: 50px 0 50px 0;
+}
+.images_fruit{
+   
+}
+form.wpcf7-form input{
+   border-radius: 10px;
+}
+.valid_quantite{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.larg_valid_fruit{
+   width: 50%;
+   padding: 0 12.5% 0 12.5%;
+}
+
+.imagfraise{
+
+   background-image:url( http://localhost/planty/wp-content/uploads/2023/08/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
+}
+.imagpampl{
+   background-image:url(http://localhost/planty/wp-content/uploads/2023/08/estudio-bloom-tOitjphtIXU-unsplash-1.png);
+}
+.imagframboise{
+   background-image:url(http://localhost/planty/wp-content/uploads/2023/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png);
+}
+.imagcitron{
+   background-image:url(http://localhost/planty/wp-content/uploads/2023/08/estudio-bloom-ezqnxsqUZ80-unsplash-1.png);
+}
+
+
+.form1{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  
+}
+.form2{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding:10px 20px 10px 20px ;
+}
+.line_g{
+   border-left: #fff solid 0.8px;
+   
+}
+.line_b{
+   border-bottom: #fff solid 0.8px;
+   margin-bottom: 40px;
+   margin: ;
+}
+/**esai centrage bouton envoie
+probleme padding sur span class"wpcf7-spinner"**/
+.bouton_envoie span{
+ margin: 0 !important;
+}
+.bouton_envoie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
