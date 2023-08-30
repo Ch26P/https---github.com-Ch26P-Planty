@@ -263,11 +263,11 @@ text-align: center;
 
 }
 /**formulaire de commande**/
-.wpcf7{
+#wpcf7-f249-p37-o1{
    max-width: 100% !important;
    width: 100% !important;
 }
-form.wpcf7-form {
+#wpcf7-f249-p37-o1 form.wpcf7-form {
    display:flex;
    flex-direction: column;
    align-items: center;
@@ -276,8 +276,7 @@ background: #3B8E46; /* Couleur du fond du formulaire */
 color: white !important; /* Couleur de texte des étiquettes */
 width:100%;
 }
-form.wpcf7-form h1,h2,h3{
-
+#wpcf7-f249-p37-o1 form.wpcf7-form h1,h2,h3{
 
    color: white !important; /* Couleur de texte des étiquettes */
    }
@@ -285,27 +284,29 @@ form.wpcf7-form h1,h2,h3{
 
 .Fruits{
 text-align: center;
-padding: 5px 15px 5px 15px;
+/*padding: 5px 15px 5px 15px;*/
+width: 20%;
 
 }
 .tailleimagefruits{
    padding: 50px 0 50px 0;
 }
 .images_fruit{
-   
 }
-form.wpcf7-form input{
+#wpcf7-f249-p37-o1 form.wpcf7-form input{
    border-radius: 10px;
 }
 .valid_quantite{
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
 }
 .larg_valid_fruit{
-   width: 50%;
-   padding: 0 12.5% 0 12.5%;
+   width: 40%; 
+}
+.larg_nbr_fruit{
+   width: 50%; 
 }
 
 .imagfraise{
@@ -326,7 +327,7 @@ form.wpcf7-form input{
 .form1{
    display:flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-between;
   
 }
 .form2{
@@ -350,7 +351,13 @@ probleme padding sur span class"wpcf7-spinner"**/
  margin: 0 !important;
 }
 .bouton_envoie {
-  display: flex;
+   margin-top: 50px;
+ /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  }
+  .boutton_fruit , .bouton_envoie input{
+   background: #E0B9B4 !important;
+   /*text-align: center;*/
+   ;
   }
