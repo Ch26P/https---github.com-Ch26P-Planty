@@ -10,10 +10,11 @@
         array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
     }
 /*hook*/
+/*hook footer*/
     function planty_menus() {
 
         $locations = array(
-     
+            
             'main-footer'   => __( 'Footer principale', 'planty' ),
             'main-header'   => __( 'header principale', 'planty' ),
         );
@@ -23,16 +24,41 @@
     
     add_action( 'init', 'planty_menus' );
 
-
+/*hook admin menu 'primary'*/
 
     function add_admin_link_to_menu($items, $args) {
-        if (is_user_logged_in() && current_user_can('administrator') && $args->theme_location == 'primary') {
-            $admin_url = admin_url();
-            $items .= '<li><a href="' . esc_url($admin_url) . '">Admin</a></li>';
+        if (is_user_logged_in() && current_user_can('administrator') && $args->theme_location == 'primary')
+         {$admin_url = admin_url();
+          $items .= '<li><a href="' . esc_url($admin_url) . '">Admin</a></li>';
+         
         }
         return $items;
     }
     add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
+   /*hook admin menu test'
+
+           function add_id_commander_menu($term_id,$args) {
+        if ( $args->theme_location == 'main-header')
+         {
+            $term_id = 8;
+         
+         }
+   
+        return $term_id;
+    }
+    apply_filters('wp_update_term', 'add_id_commander_menu');    */
+
+
+
+
+
+
+
+  
+  
+
+
+
     /*Chargement des widgets */
 
 

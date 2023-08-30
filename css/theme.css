@@ -16,12 +16,20 @@ letter-spacing: 0em;
 text-align: center;*/
 
 
-/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
 
 
 
 
 /*menu header*/
+.navigation-principal{
+display:flex;
+
+}
+.navigation-principal a {
+text-align: center;
+padding-top: 50px;
+}
+
 div.header-inner{
    margin:0;
    padding:0;
@@ -36,7 +44,7 @@ ul.primary-menu {
 margin: 0 0 0 0 ;
 
 }
-.menu-item-167{
+header ul li:last-child a{
    background:#E0B9B4;
 }
 
@@ -65,10 +73,33 @@ padding-right: 3em;
    margin: 0;
    
 }
-/*header.entry-header{
+header.entry-header{
    display:none;
 
-}*/
+}
+/*footer*/
+
+footer {
+   display:flex;
+justify-content: center;
+border-top-width: 0 !important;
+margin-top:0 !important;
+}
+footer ul li {
+   list-style-type: none !important;
+}
+
+
+footer ul li a:hover{
+   text-decoration: none !important;
+   color: #C02E44 !important;
+}
+
+
+
+
+
+
 /*logo*/
 .custom-logo{
 height:40px

@@ -80,25 +80,38 @@
 				</div><!-- .header-titles-wrapper -->
 
 				<div class="header-navigation-wrapper">
+				 
+<!--  test -->
 
+<!--  fin test -->
 					<?php
 					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
 						?>
 
-							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
+							<nav class="primary-menu-wrapper navigation-principal" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
 
 								<ul class="primary-menu reset-list-style">
 
 								<?php
 								if ( has_nav_menu( 'primary' ) ) {
-
+							
 									wp_nav_menu(
 										array(
 											'container'  => '',
 											'items_wrap' => '%3$s',
 											'theme_location' => 'primary',
 										)
-									);
+										);
+									wp_nav_menu(
+										array(
+											'container'  => '',
+											'items_wrap' => '%3$s',
+											'theme_location' => 'main-header',
+										)
+										);
+								
+
+
 
 								} elseif ( ! has_nav_menu( 'expanded' ) ) {
 
@@ -114,15 +127,17 @@
 								}
 								?>
 
-								</ul>
-								<ul class="header-menu-commander">
+						<!---->		</ul>
+								<ul class="header-menu-commander  reset-list-style">
 								<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'main-header',
-					)
-				);
-				?>
+									wp_nav_menu(
+										array(
+											'container'  => '',
+											'items_wrap' => '%3$s',
+											'theme_location' => 'main-header',
+										)
+										);
+								?>
 
 
 							</ul>
