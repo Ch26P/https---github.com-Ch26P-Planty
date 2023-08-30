@@ -72,12 +72,12 @@ padding-right: 3em;
 .primary-menu li{
    margin: 0;
    
-}
+}/*
 header.entry-header{
    display:none;
 
 }
-/*footer*/
+footer*/
 
 footer {
    display:flex;
