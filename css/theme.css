@@ -266,6 +266,10 @@ text-align: center;
 #wpcf7-f249-p37-o1{
    max-width: 100% !important;
    width: 100% !important;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 #wpcf7-f249-p37-o1 form.wpcf7-form {
    display:flex;
@@ -280,9 +284,16 @@ width:100%;
 
    color: white !important; /* Couleur de texte des étiquettes */
    }
+   #wpcf7-f249-p37-o1 form.wpcf7-form h1{
 
+      color: white !important;
+      margin-bottom: 60px; /* Couleur de texte des étiquettes */
+      }
 
 .Fruits{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 text-align: center;
 /*padding: 5px 15px 5px 15px;*/
 width: 20%;
@@ -298,15 +309,16 @@ width: 20%;
 }
 .valid_quantite{
    display: flex;
-   flex-direction: row;
+   /*flex-direction: row;*/
    justify-content: space-between;
-   align-items: center;
+   /*align-items: center;*/
 }
-.larg_valid_fruit{
-   width: 40%; 
+.larg_valid_fruit {
+   width: 55%; 
+   text-align: right !important;
 }
 .larg_nbr_fruit{
-   width: 50%; 
+   width: 40%; 
 }
 
 .imagfraise{
@@ -333,31 +345,70 @@ width: 20%;
 .form2{
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   padding:10px 20px 10px 20px ;
+   justify-content: space-between;
+   align-items:flex-start;
+ 
+}
+.form3{
+   display:flex;
+   flex-wrap: wrap;
+  /*justify-content: center;*/
+  align-items: center;
+  /*width: 100%;*/
+   margin-top: 40px;
+}
+.bloc_information{
+padding-right: 15px;
+width: 50%;
+}
+.bloc_livraison{
+padding-left: 15px;
+width:50%;
 }
 .line_g{
    border-left: #fff solid 0.8px;
    
 }
 .line_b{
-   border-bottom: #fff solid 0.8px;
-   margin-bottom: 40px;
-   margin: ;
+
+}
+.line_h
+{
+   border-top: #fff solid 0.8px;
+      border-bottom: #fff solid 0.8px;
+  /* margin-bottom: 40px;
+   margin: ;*/
 }
 /**esai centrage bouton envoie
 probleme padding sur span class"wpcf7-spinner"**/
 .bouton_envoie span{
  margin: 0 !important;
 }
-.bouton_envoie {
+.bloc_bouton_envoie {
+   text-align: center;
    margin-top: 50px;
- /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center;*/
+  align-items: center;
   }
+
+  .bloc_bouton_envoie input {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+   text-align: center;
+
+  }
+
   .boutton_fruit , .bouton_envoie input{
    background: #E0B9B4 !important;
    /*text-align: center;*/
    ;
+  }
+  .larg_valid_fruit input{
+   /*padding: 0% !important;
+   padding: 0.9em;*/
+   margin-left: 5%;
+   width: 100%;
+   height: 100%;
   }
