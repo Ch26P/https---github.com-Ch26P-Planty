@@ -24,6 +24,7 @@
 
    --text-commander-color:#fff;/* var(--text-commander-color)*/
                      /*raduis*/
+                     
    --border-raduis-input:7px;/* var(--border-raduis-input)*/
 }
 
@@ -182,8 +183,7 @@ padding-right: 3em;
   color: black !important;
 }
 .primary-menu li{
-   margin: 0;
-   
+   margin: 0; 
 }
 
                      /*logo*/
@@ -267,182 +267,10 @@ width: 780px;
    
 .text1accueil{
    padding:50px 30px 50px 30px;
+
+   /*galerie photo*/
    }
-
-
-/**NOUS RENCONTRER**/
-/*1ER BLOC*/
-
-.bloc_titre_rencontrer p{
-   width: 670px !important;
-   margin-top: 20px;
-   margin-bottom:30px !important;
-}
-
-/*2eme bloc nous rencontrer*/
-
-.bloc_3equipes {
-position: relative;
-width: 100%;
-}
-
-
-
-.bloc_equipe h2{
-   color: var(--titre-color3);
-margin-bottom: 0 !important;
-}
-
-
-
-
-
-.image_deco_bloc_equipe{
-   position: absolute;
-   margin-bottom: 0 !important;
-   right:80px;
-   bottom:0px;
-}
-.ESSAI{
-z-index: 1;
-}
-
-.photo_equipe{
-   width: 167px;
-   height: 167px;
-margin:0 0 10px 0 !important;
-   
-}
-.bloc_photo_text_equipe{
-margin: 20px 80px 90px 80px !important;
-}
-
-
-
-
-
-
-
-
-
-
-.deplace-fleur{
-position: relative;
-top:110px ;
-right: 450px;/**/
-}/*
-.bloc-equipe{
-padding-bottom:-20px;
-margin-bottom: 50px;
-}
-.deplace-tige{
-position: relative;
-bottom: 170px;
-left: 40%;
-}*/
-.deplace-plante{
-position: relative;
-bottom: 170px;
-right: 200px;
-bottom: 200px;
-z-index:0;
-width: 147px;
-height: 135px;
-
-/*angle: 160 deg*/
-
-}
-.contact{
-position: relative;
-z-index: 1;
-}
-
-
- @media (min-width: 1220px){
-  .entry-content  .alignfull{
-      margin-top: 0;
-      margin-bottom: 0;
-
-}
-}
-@media (min-width: 1000px){
-   .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
-      margin-top: 0;
-      margin-bottom: 0;
-
-}
-}
-@media (min-width: 700px){
-   .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
-      margin-top: 0;
-      margin-bottom: 0;
-
-}
-
-} 
-
-
-
-               /**section temoignage**/
-
-.temoignage{
-
-}
-.temoignage section{
- 
-}
-
-.group_photo_titre_text{
-  margin:  35px !important;
-  margin-top: 10px !important;/**/
-   width: 345px !important;
-height: 139px;
-}
-.temoignage_photo{
-  width: 126px !important;
-height: 139px !important;
-
-
-}
-.temoignage_titre_text{
-   height: 139px !important;
-/*   font-family: Syne;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;*/
-
-}
-
-
-.temoignage_titre_text h3{
-  
-font-size: 30px;
-
-line-height: 36px;
-
-}
-.temoignage h2{
-   font-weight: 800;
-}
-
-.temoignage_titre_text p{
- /*  height: 139px !important;*/
-   font-family: Syne;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0em;
-text-align: left;
-width: 196px;
-}             
-
-
-
-/*galerie photo*/
-
-.bloc_galerie 
+   .bloc_galerie 
 {
   margin-top:30px !important;
   margin-bottom:30px !important;
@@ -490,10 +318,134 @@ text-align: center;
 .titre_pamplemousse_gallerie{
    padding:60px 0px !important;
 }
+               /**section temoignage**/
+
+.group_photo_titre_text{
+margin:  35px !important;
+margin-top: 10px !important;/**/
+   width: 345px !important;
+height: 139px;
+}
+.temoignage_photo{
+width: 126px !important;
+height: 139px !important;
+
+
+}
+.temoignage_titre_text{
+   height: 139px !important;
+}
+
+
+.temoignage_titre_text h3{
+color: var(--titre-color1); 
+font-size: 30px;
+line-height: 36px;
+
+}
+.temoignage h2{
+   font-weight: 800;
+}
+
+.temoignage_titre_text p{
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+width: 196px;
+}      
 
 
 
+/**NOUS RENCONTRER**/
+/*1ER BLOC*/
 
+.bloc_titre_rencontrer p{
+   width: 670px !important;
+   margin-top: 20px;
+   margin-bottom:30px !important;
+}
+.deplace-fleur{
+   position: relative;
+   top:110px ;
+   right: 450px;
+   }
+
+/*2eme bloc nous rencontrer/l'equipe*/
+
+.bloc_3equipes {
+position: relative;
+width: 100%;
+}
+.bloc_equipe h2{
+   color: var(--titre-color3);
+margin-bottom: 0 !important;
+}
+.image_deco_bloc_equipe{
+   position: absolute;
+   margin-bottom: 0 !important;
+   right:80px;
+   bottom:0px;
+}
+.ESSAI{
+z-index: 1;
+}
+.photo_equipe{
+   width: 167px;
+   height: 167px;
+margin:0 0 10px 0 !important;
+   
+}
+.bloc_photo_text_equipe{
+margin: 20px 80px 90px 80px !important;
+}
+/*formulaire contact*/
+
+.deplace-plante{
+position: relative;
+right: 187px;
+bottom: 290px;
+z-index:0;
+width: 147px;
+height: 135px;
+}
+.contact{
+position: relative;
+z-index: 1;
+}
+.contact  h2{
+   color: var(--titre-color3) ;
+}
+
+
+.contact input[type="text"],
+.contact input[type="email"]
+{
+   width: 383px;
+height: 71px;
+
+}
+.contact textarea{
+   width: 383px;
+}
+.contact .wpcf7-form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.contact .wpcf7-form input,
+.contact .wpcf7-form textarea
+{
+   display: flex;
+   margin-bottom: 20px;
+   margin-top: 10px;
+}
+
+.contact .wpcf7-form span{
+margin-top: 10px !important;
+}  
 
  /*footer*/
 
@@ -520,3 +472,30 @@ footer ul li a:hover{
 footer ul li a {
    color: black;
 }
+          /*a controler*/
+          
+
+ @media (min-width: 1220px){
+   .entry-content  .alignfull{
+       margin-top: 0;
+       margin-bottom: 0;
+ 
+ }
+ }
+ @media (min-width: 1000px){
+    .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+       margin-top: 0;
+       margin-bottom: 0;
+ 
+ }
+ }
+ @media (min-width: 700px){
+    .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+       margin-top: 0;
+       margin-bottom: 0;
+ 
+ }
+ 
+ } 
+ 
+ 
