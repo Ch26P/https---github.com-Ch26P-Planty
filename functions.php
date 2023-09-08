@@ -8,6 +8,9 @@
         //Chargement du css/theme.css pour personnalisations
         wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css',
         array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
+        //Chargement du css/contact-from/commander.css pour personnalisations
+        wp_enqueue_style('commander-style',get_stylesheet_directory_uri() . '/css/contact-from/commander.css');
+
     }
 /*hook*/
 /*hook footer*/

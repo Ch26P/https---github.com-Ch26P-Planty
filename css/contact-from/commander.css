@@ -1,0 +1,258 @@
+/**general**/
+#wpcf7-f249-p37-o1{
+    max-width: 100% !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ #wpcf7-f249-p37-o1 form.wpcf7-form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ background: var(--background-formulaire-commande); /* Couleur du fond du formulaire */
+ color: white !important; /* Couleur de texte des étiquettes */
+ width:100%;
+ }
+ #wpcf7-f249-p37-o1 form.wpcf7-form h1,
+ #wpcf7-f249-p37-o1 form.wpcf7-form h2,
+ #wpcf7-f249-p37-o1 form.wpcf7-form h3{
+ 
+    color: white !important; /* Couleur de texte des étiquettes */
+ }
+ #wpcf7-f249-p37-o1 form.wpcf7-form h1{
+    margin-bottom: 60px; /* Couleur de texte des étiquettes */
+    }
+ 
+    #wpcf7-f249-p37-o1 form.wpcf7-form h4{
+       margin:0;
+       }
+ 
+
+            /**bloc formulaire**/
+
+.bloc_formulaire{
+    padding: 0 80px 0 80px;
+   }
+                  /**bloc commande fruits**/
+   
+   .bloc_commande
+   {
+      border-top: #fff solid 0.8px;/*bordure blaanche en haut*/
+      border-bottom: #fff solid 0.8px;
+   }.bloc_commande h2{
+    margin-bottom: 0;
+   }
+   
+   .form1{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+   }
+   
+   .Fruits{
+      display: flex;
+      flex-direction: column;
+     align-items: center;
+   text-align: center; 
+   width:192.53px ;
+   margin-top: 30px;
+   }
+   
+   
+   .valid_quantite{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+   
+   }
+   
+   .larg_nbr_fruit{
+      width: 45%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .larg_valid_fruit p{
+      margin: 0;
+   }
+   .larg_valid_fruit {
+    
+      text-align: center ;
+      display: flex;
+      align-items: center;
+   justify-content: center;
+      background: var(--bouton-color);
+      width: 50%;
+      border-radius: var(--border-raduis-input);
+   }
+   .boutton_fruit ,
+    .bouton_envoie input{
+      background: var(--bouton-color) !important; 
+     }
+   
+   
+                  /**bloc  info+livraison**/
+   
+   .bloc_info_livraison{
+      display:flex;
+      flex-wrap: wrap;
+   
+     align-items: center;
+   
+      margin-top: 40px;
+   }
+   
+   .bloc_info_livraison fieldset{
+      padding-bottom: 0px;
+   }
+   
+   .bloc_information{
+   padding-right: 50px;
+   width: 50%;
+   }
+   .form2{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items:flex-start;
+    
+   }
+   
+   
+   .bloc_livraison{
+   padding-left: 50px;
+   width:50%;
+   border-left: #fff solid 0.8px;
+   }
+   
+   
+   
+                        /**bloc bouton envoie"**/
+   .bouton_envoie span{
+    margin: 0 !important;
+   }
+   .bloc_bouton_envoie {
+      text-align: center;
+      margin-top: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     }
+   
+     .bloc_bouton_envoie input {
+      display: flex;
+     justify-content: center;
+     align-items: center;
+      text-align: center;
+   
+     }
+   
+   .container {
+      /*  display: flex;*/
+        position: relative;
+        width: 100%;
+        height: 130px;
+ 
+   }
+   
+   .container img{
+      position: absolute;
+   }
+   .container h3 {
+       position: absolute;
+       width: 100%;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      
+   }
+
+   .fraise h3,
+   .citron h3 {
+    padding:50px 0 ;/*centrage framboise*/
+    font-weight: 800;
+    }
+
+   .framboise h3 {
+   padding: 40px;/*centrage framboise*/
+   font-weight: 800;
+   }
+   .pamplemousse h3 {
+    padding:40px 20PX;/*centrage framboise*/
+    font-weight: 800;
+    }
+   
+
+   
+   .bouton-select-plus,
+   .bouton-select-moin
+   {
+      background:none!important; 
+      padding: 2px 15px;
+      text-decoration: none; 
+   }
+   
+   .bouton-select-plus{
+     border-top-right-radius:var(--border-raduis-input) ;  
+   }
+   
+   .bouton-select-plus:hover{
+      color: var(--hover-color);
+      text-decoration: none; 
+    }
+   
+   .bouton-select-moin{
+   border-top:#fff solid 1px;
+      border-bottom-right-radius: var(--border-raduis-input);
+    
+    }
+    .bouton-select-moin:hover{
+      color: var(--hover-color); 
+      text-decoration: none; 
+    }
+   
+   
+   .number-input{
+      display: flex;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   }
+   
+   .number-input input,
+   .bloc_bouton_p_m,
+   .larg_valid_fruit,
+   input
+   {
+   height: 56px;
+   
+   }
+   .bloc_info_livraison p{
+      width: 100%;
+   }
+   
+   .bloc_bouton_p_m{
+     background: var(--bouton-plus-moins-commander);
+     border-radius:0 var(--border-raduis-input) var(--border-raduis-input) 0;
+   
+   }
+   .bouton_p p,
+   .number-input p{
+      margin:0 !important;  
+   }
+   input.quantity{
+      border-radius: var(--border-raduis-input) 0 0 var(--border-raduis-input) !important;
+   }
+   .form2 input{
+      margin-top: 15px;
+   }
+   .form2 p{
+      margin-top: 20px;
+      margin-bottom: 0;
+   }
