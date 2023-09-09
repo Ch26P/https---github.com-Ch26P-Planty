@@ -1,0 +1,75 @@
+/*css short code bandeau canette*/
+
+
+#bloc_bandeau_canettes{
+display: flex;
+max-width: 100%;/**permet de prendre **/
+width: 100%;/**    toute la longueur   **/
+justify-content: center;
+height: 180px;
+}
+.bloc_image{
+display: flex; 
+} 
+.bloc_image figure{
+position: relative;
+width: 243px;
+}
+.hauteur1{
+top:70px;
+}
+.hauteur2{
+top:35px;
+}
+.hauteur3{
+}
+.position_1 {
+   left: 880px;
+}
+.position_2 {
+left: 760px;
+}
+.position_3 {
+left:640px !important;
+   }
+.position_4 {
+   left: 520px;
+}
+.position_5 {
+left:400px;
+}
+.position_6 {
+   left: 280px;
+}
+.position_7 {
+   left: 161px;
+}
+.position_8 {
+   left: 42px;
+}
+.position_9 {
+   right: 75px;
+}
+.position_10 {
+   right: 193px;
+}
+.position_11 {
+   right: 313px;
+}
+.position_12 {
+   right: 432px;
+}
+.position_13 {
+   right:551px;
+}
+.position_14 {
+   right: 671px;
+}
+.position_15 {
+   right: 792px;
+}
+.position_16 {
+   right: 912px;
+}
+
+    
