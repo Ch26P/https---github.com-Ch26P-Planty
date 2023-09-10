@@ -42,7 +42,12 @@
    {
       border-top: #fff solid 0.8px;/*bordure blaanche en haut*/
       border-bottom: #fff solid 0.8px;
-   }.bloc_commande h2{
+      padding-bottom: 40px !important;
+
+
+   }
+   
+   .bloc_commande h2{
     margin-bottom: 0;
    }
    
@@ -51,6 +56,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      
    }
    
    .Fruits{
@@ -231,7 +237,6 @@
    input
    {
    height: 56px;
-   
    }
    .bloc_info_livraison p{
       width: 100%;

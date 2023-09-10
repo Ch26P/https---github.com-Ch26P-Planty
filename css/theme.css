@@ -42,16 +42,10 @@ body * ,h1,h2,h3,p,a{
   /* margin:0 !important;*/
    
  }
- @media (max-width: 500px){
-h1{
-   font-family: Syne;
-   font-size: 30px;
-   font-weight: 800;
-   line-height: 36px;
-   letter-spacing: 0em;
-   text-align: center;
- }
-}
+
+
+
+
  h2{
    font-family: Syne;
 font-size: 30px;
@@ -115,7 +109,10 @@ form.wpcf7-form textarea
 
 fieldset{
    border:none;
-   padding: 0;
+  
+   padding-top: 0;
+   padding-left: 0;
+   padding-right: 0;
 
 }
 legend{
@@ -127,12 +124,18 @@ input[type=submit] {
    background: var(--bouton-color) !important;
    width: 198px;
    height: 55px;
-   text-decoration: none; 
+   text-decoration: none;
+   text-transform:none;
+
 }
+
+
+
 
 input[type=submit]:hover {
    background: var(--hover-color) !important;
    text-decoration: none;
+  
    }
 
 
@@ -221,6 +224,14 @@ padding: 30px 0 30px 0 ;
 
                      /*acueil*/
 
+.titre_acc{
+   flex-wrap: nowrap !important;
+}
+.titre_acc h1{
+   margin-left: 40px !important;
+   margin-right: 40px !important;
+   width: 780px;
+}
 
 .boutons a{
    background:var(--bouton-color) !important;
@@ -233,21 +244,8 @@ padding: 30px 0 30px 0 ;
    border:none;
    text-decoration: none !important;
    }
-.courbe-font h1{
-width: 780px;
 
-}
-@media (max-width: 800px){
 
-   .courbe-font h1{
-      width: 500px;}
-
-}
-@media (max-width: 500px){
-   .courbe-font h1{
-      width: 370px;}
-
-}
 /*placer les 3 images acceuil */
 .elementg{
    position: relative;
@@ -267,6 +265,8 @@ width: 780px;
    
 .text1accueil{
    padding:50px 30px 50px 30px;
+   margin-top: 0 !important;
+    margin-bottom: 0 !important;
 
    /*galerie photo*/
    }
@@ -306,8 +306,8 @@ width: 780px;
 font-size: 48px;
 font-weight: 800;
 line-height: 58px;
-letter-spacing: 0em;
-text-align: center;
+/*letter-spacing: 0em;
+text-align: center;*/
 
    margin:0;
    padding-top: 100px;
@@ -362,21 +362,28 @@ width: 196px;
 /*1ER BLOC*/
 
 .bloc_titre_rencontrer p{
+   max-width: 100% !important;
    width: 670px !important;
    margin-top: 20px;
    margin-bottom:30px !important;
 }
-.deplace-fleur{
+.deplace-fleur figure{
    position: relative;
    top:110px ;
    right: 450px;
    }
 
 /*2eme bloc nous rencontrer/l'equipe*/
+.bloc_equipe{
+   margin: 0 !important;
+}
+
+
 
 .bloc_3equipes {
 position: relative;
 width: 100%;
+margin-bottom: 0 !important;
 }
 .bloc_equipe h2{
    color: var(--titre-color3);
@@ -390,6 +397,7 @@ margin-bottom: 0 !important;
 }
 .ESSAI{
 z-index: 1;
+margin: 0 !important
 }
 .photo_equipe{
    width: 167px;
@@ -413,6 +421,7 @@ height: 135px;
 .contact{
 position: relative;
 z-index: 1;
+margin: 0 !important;
 }
 .contact  h2{
    color: var(--titre-color3) ;
@@ -441,6 +450,9 @@ height: 71px;
    display: flex;
    margin-bottom: 20px;
    margin-top: 10px;
+}
+#wpcf7-f83-p35-o1 input[type=submit] {
+   justify-content: center;
 }
 
 .contact .wpcf7-form span{
@@ -519,4 +531,137 @@ footer ul li a {
  
  } 
  
- 
+                  /*** @media***/
+
+
+                  @media (max-width: 800px){
+                     h1{
+                        
+                        font-size: 30px;
+                        font-weight: 800;
+                        line-height: 36px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                     }
+                  
+                     .titre_acc h1{
+                        width: 500px!important;}
+                  
+                  
+                        p{
+                         
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        margin: 0;
+                         }
+                  
+                         .deplace-fleur figure{
+                        
+                           top:20px !important;
+                           right:150px !important;
+                           }
+                           .bloc_info_livraison{
+flex-direction: column;
+ }
+ .bloc_information{
+   padding-right: 0 !important;
+   border-bottom:#fff solid 1px;
+   padding-bottom: 40px !important;
+ }
+ .bloc_livraison{
+   border-left:none !important;
+   
+  margin-top: 5px !important;
+   padding-left: 0 !important;
+ }
+ /**formulaire**/
+
+ .bloc_info_livraison input
+{
+width: 350px ;
+padding: 0;
+}
+
+                  
+                  }
+                  
+                   @media (max-width: 500px){
+                    h1{
+                        font-size: 25px;
+                        font-weight: 800;
+                        line-height: 30px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                  
+                      }
+                      
+                     .titre_acc h1{
+                        width: 320px !important;}
+                  
+                        .bloc_fruits_gallerie h2{
+                     font-size: 38px !important;
+                     font-weight: 800;
+                     line-height: 46px !important ;
+                  }
+                  .bloc_fruits_gallerie {
+
+                   width:300px !important;
+                   height:200px ; 
+
+                }
+                .titre_framboise_gallerie{
+                  padding:50px 50px !important;
+               }
+              
+               .titre_fraise_gallerie,
+               .titre_citron_gallerie{
+                  padding:80px 0px !important;
+               }
+               .deplace-fleur figure{
+                        
+                  top:0px !important;
+                  right:0px !important;
+                  }
+
+                  .contact input[type="text"],
+                  .contact input[type="email"]
+                  {
+                     width: 300px;
+                     height: 71px;
+                  
+                  }
+
+/*formulaire*/
+.bloc_info_livraison input
+{
+width: 300px ;}
+
+                  }
+                   
+
+                  @media (max-width: 1050px){
+
+                     .deplace-fleur figure{
+                        
+                        top:40px ;
+                        right: 300px;
+                        }
+/*
+                        .form1{
+                           display:flex;
+                           flex-direction: column;
+                           flex-wrap: wrap;
+                           justify-content: center;
+                           align-items: center;
+                           margin-right: ;
+                           margin-left: ;
+                        }*/
+                        .Fruits{
+                          margin: auto; 
+                        }
+                  }
+
+
+
