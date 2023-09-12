@@ -199,36 +199,37 @@
    .bouton-select-plus,
    .bouton-select-moin
    {
-      background:none!important; 
-      padding: 2px 15px;
+      background:var(--bouton-color) !important; 
+     height: 50%;
+      width:30px ;
+    /*  padding: 3px 15px;*/
       text-decoration: none; 
+      position:absolute;
+     right: 0px;
+     color: white;
    }
-   
+
    .bouton-select-plus{
-     border-top-right-radius:var(--border-raduis-input) ;  
+     top:0px;
+       border-top-right-radius:var(--border-raduis-input) ; 
    }
-   
-   .bouton-select-plus:hover{
+   .bouton-select-moin{
+ bottom: 0px; 
+   border-top:#fff solid 1px;
+   border-bottom-right-radius: var(--border-raduis-input);
+   }
+   .bouton-select-plus:hover, .bouton-select-moin:hover{
       color: var(--hover-color);
       text-decoration: none; 
     }
-   
-   .bouton-select-moin{
-   border-top:#fff solid 1px;
-      border-bottom-right-radius: var(--border-raduis-input);
-    
-    }
-    .bouton-select-moin:hover{
-      color: var(--hover-color); 
-      text-decoration: none; 
-    }
-   
-   
+
    .number-input{
       display: flex;
    justify-content: center;
    align-items: center;
    box-sizing: border-box;
+   position: relative;
+   height: 56px;
    }
    
    .number-input input,
@@ -251,9 +252,7 @@
    .number-input p{
       margin:0 !important;  
    }
-   input.quantity{
-      border-radius: var(--border-raduis-input) 0 0 var(--border-raduis-input) !important;
-   }
+   
    .form2 input{
       margin-top: 15px;
    }

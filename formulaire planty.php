@@ -20,14 +20,13 @@
                     <div class="valid_quantite">
                         <div class="larg_nbr_fruit"  >
                             <div class="number-input">
-                                <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                <div classe="bloc_bouton_p_m">
+                                
+                               
                                     
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</button>                                
-                                   
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</button>                                                       
-                                  
-                                </div>
+                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
+                                   <input class="quantity" min="0" name="quantity_fraise" value="0" type="number">
+                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</a>                                                       
+                              
                             </div>
                         </div>
                         <div class="larg_valid_fruit" >
@@ -45,11 +44,11 @@
                     <div class="valid_quantite">
                         <div class="larg_nbr_fruit" >
                             <div class="number-input">
-                                 <input type="number" class="quantity" min="0" name="quantity" value="0" >
-                                 <div class="bloc_bouton_p_m">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</button> 
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</button>
-                                 </div>
+                                 
+                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
+                                   <input class="quantity" min="0" name="quantity_pamplemousse" value="0" type="number">
+                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</a>   
+                                
                             </div>
                         </div>
                         <div class="larg_valid_fruit" >
@@ -65,14 +64,13 @@
                     <div class="valid_quantite">
                         <div class="larg_nbr_fruit" >
                             <div class="number-input">
-                                 <input type="number" class="quantity" min="0" name="quantity" value="0" >
-                                 <div class="bloc_bouton_p_m">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</button> 
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</button>
-                                </div>
+
+                                
+                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
+                                   <input class="quantity" min="0" name="quantity_framboise" value="0" type="number">
+                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</a>   
+                                
                             </div>
-                           <!-- [number fraise id:Framboise class:images_fruits "0"]  
-                        -->
                         </div>
                         <div class="larg_valid_fruit" >
                             <input type="button" value="Ok" class="boutton_fruit">
@@ -87,12 +85,13 @@
                     <div class="valid_quantite">
                         <div class="larg_nbr_fruit"  >
                             <div class="number-input">
-                                <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                <div classe="bloc_bouton_p_m">
+                                
+                              
                                     
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</button>                                
-                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</button>                                                       
-                                </div>
+                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
+                                   <input class="quantity" min="0" name="quantity_citron" value="0" type="number">
+                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</a>                                                       
+                              
                             </div>
                         </div>
                         <div class="larg_valid_fruit" >

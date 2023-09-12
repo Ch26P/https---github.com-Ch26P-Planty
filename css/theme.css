@@ -133,10 +133,10 @@ input[type=submit] {
 
 
 input[type=submit]:hover {
-   background: var(--hover-color) !important;
-   text-decoration: none;
-  
-   }
+background: var(--hover-color) !important;
+text-decoration: none;
+
+}
 
 
                 /****fin general****/
@@ -189,7 +189,7 @@ padding-right: 3em;
    margin: 0; 
 }
 
-                     /*logo*/
+                  /*logo*/
 .custom-logo{
 height:40px
 }
@@ -213,16 +213,20 @@ border-bottom-right-radius: 55em 3em;
 border-bottom-left-radius: 55em 3em;
 padding: 30px 0 30px 0 ;
 }
-.ombrebas{
-   box-shadow: 10px 5px 0 5px   #f2dac6;
-  
-}
+
 .titrerouge{
    color:var(--titre-color2);
    font-weight: 800;
 }
 
                      /*acueil*/
+.bloc_titre_accueil{
+   padding-bottom: 10px;
+   background: #E3D9D0;
+   ; 
+   border-bottom-right-radius: 55em 3em;
+border-bottom-left-radius: 55em 3em;
+}                 
 
 .titre_acc{
    flex-wrap: nowrap !important;
@@ -260,9 +264,6 @@ padding: 30px 0 30px 0 ;
    .elemntc{
    z-index:3;
    }
-
-
-   
 .text1accueil{
    padding:50px 30px 50px 30px;
    margin-top: 0 !important;
@@ -300,15 +301,12 @@ padding: 30px 0 30px 0 ;
 .bloc_fruits_gallerie h2{
    position: absolute !important;
    text-align: center;
-   color: #fff !important;
+   color: #fff ;
    font-weight: 800;
    
 font-size: 48px;
 font-weight: 800;
 line-height: 58px;
-/*letter-spacing: 0em;
-text-align: center;*/
-
    margin:0;
    padding-top: 100px;
 }
@@ -322,7 +320,7 @@ text-align: center;*/
 
 .group_photo_titre_text{
 margin:  35px !important;
-margin-top: 10px !important;/**/
+margin-top: 10px !important;
    width: 345px !important;
 height: 139px;
 }
@@ -459,27 +457,6 @@ height: 71px;
 margin-top: 10px !important;
 }  
 
-
-
-
-     /***********/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /*footer*/
 
  footer {
@@ -505,64 +482,64 @@ footer ul li a:hover{
 footer ul li a {
    color: black;
 }
-          /*a controler*/
+          /* */
           
 
- @media (min-width: 1220px){
-   .entry-content  .alignfull{
-       margin-top: 0;
-       margin-bottom: 0;
- 
- }
- }
- @media (min-width: 1000px){
-    .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
-       margin-top: 0;
-       margin-bottom: 0;
- 
- }
- }
- @media (min-width: 700px){
-    .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
-       margin-top: 0;
-       margin-bottom: 0;
- 
- }
- 
+@media (min-width: 1220px){
+.entry-content  .alignfull{
+      margin-top: 0;
+      margin-bottom: 0;
+
+}
+}
+@media (min-width: 1000px){
+   .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+      margin-top: 0;
+      margin-bottom: 0;
+
+}
+}
+@media (min-width: 700px){
+   .entry-content  .alignfull:not(.wp-block-group.has-background),.wp-block-group:not(.has-background):not(.alignwide):not(.alignfull){
+      margin-top: 0;
+      margin-bottom: 0;
+
+}
+
  } 
  
                   /*** @media***/
 
 
-                  @media (max-width: 800px){
-                     h1{
-                        
-                        font-size: 30px;
-                        font-weight: 800;
-                        line-height: 36px;
-                        letter-spacing: 0em;
-                        text-align: center;
-                     }
-                  
-                     .titre_acc h1{
-                        width: 500px!important;}
-                  
-                  
-                        p{
-                         
-                        font-size: 20px;
-                        font-weight: 400;
-                        line-height: 24px;
-                        letter-spacing: 0em;
-                        margin: 0;
-                         }
-                  
-                         .deplace-fleur figure{
-                        
-                           top:20px !important;
-                           right:150px !important;
-                           }
-                           .bloc_info_livraison{
+@media (max-width: 800px){
+h1{
+   
+   font-size: 30px;
+   font-weight: 800;
+   line-height: 36px;
+   letter-spacing: 0em;
+   text-align: center;
+}
+
+.titre_acc h1{
+width: 500px!important;}
+
+
+p{
+   
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+margin: 0;
+}
+
+.deplace-fleur figure{
+
+top:20px !important;
+right:150px !important;
+}
+.bloc_info_livraison{
 flex-direction: column;
  }
  .bloc_information{
@@ -577,91 +554,91 @@ flex-direction: column;
    padding-left: 0 !important;
  }
  /**formulaire**/
+ .contact input[type="text"],
+ .contact input[type="email"]
+ {
+ width: 350px;
+ height: 71px;
+ }
 
- .bloc_info_livraison input
-{
-width: 350px ;
-padding: 0;
+.contact textarea{
+   width: 350px;
+}    
+.deplace-plante{
+   right: 170px;
+   bottom: 290px;
+
+   }        
 }
 
-                  
-                  }
-                  
-                   @media (max-width: 500px){
-                    h1{
-                        font-size: 25px;
-                        font-weight: 800;
-                        line-height: 30px;
-                        letter-spacing: 0em;
-                        text-align: center;
-                  
-                      }
-                      
-                     .titre_acc h1{
-                        width: 320px !important;}
-                  
-                        .bloc_fruits_gallerie h2{
-                     font-size: 38px !important;
-                     font-weight: 800;
-                     line-height: 46px !important ;
-                  }
-                  .bloc_fruits_gallerie {
+@media (max-width: 500px){
+h1{
+font-size: 25px;
+font-weight: 800;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
 
-                   width:300px !important;
-                   height:200px ; 
+}
 
-                }
-                .titre_framboise_gallerie{
-                  padding:50px 50px !important;
-               }
-              
-               .titre_fraise_gallerie,
-               .titre_citron_gallerie{
-                  padding:80px 0px !important;
-               }
-               .deplace-fleur figure{
-                        
-                  top:0px !important;
-                  right:0px !important;
-                  }
+.titre_acc h1{
+width: 320px !important;}
 
-                  .contact input[type="text"],
-                  .contact input[type="email"]
-                  {
-                     width: 300px;
-                     height: 71px;
-                  
-                  }
+.bloc_fruits_gallerie h2{
+font-size: 38px !important;
+font-weight: 800;
+line-height: 46px !important ;
+}
+.bloc_fruits_gallerie {
+
+width:300px !important;
+height:200px ; 
+
+}
+.titre_framboise_gallerie{
+padding:50px 50px !important;
+}
+
+.titre_fraise_gallerie,
+.titre_citron_gallerie{
+padding:80px 0px !important;
+}
+.deplace-fleur figure{
+
+top:0px !important;
+right:0px !important;
+}
+
+.contact input[type="text"],
+.contact input[type="email"]
+{
+width: 300px;
+height: 71px;
+
+}
 
 /*formulaire*/
-.bloc_info_livraison input
-{
-width: 300px ;}
+.contact textarea{
+   width: 300px;
+}
+.deplace-plante{
+   right: 147px;
+   bottom: 290px;
 
-                  }
-                   
+   }  
+}
+@media (max-width: 1050px){
 
-                  @media (max-width: 1050px){
+.deplace-fleur figure{
 
-                     .deplace-fleur figure{
-                        
-                        top:40px ;
-                        right: 300px;
-                        }
-/*
-                        .form1{
-                           display:flex;
-                           flex-direction: column;
-                           flex-wrap: wrap;
-                           justify-content: center;
-                           align-items: center;
-                           margin-right: ;
-                           margin-left: ;
-                        }*/
-                        .Fruits{
-                          margin: auto; 
-                        }
-                  }
+top:40px ;
+right: 300px;
+}
+.Fruits{
+   margin: auto; 
+}
+
+}
 
 
 

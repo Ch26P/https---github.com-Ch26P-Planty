@@ -13,12 +13,9 @@
         //Chargement du css/bandeau-canettes.css pour personnalisations
         wp_enqueue_style('shot-code-canette-style',get_stylesheet_directory_uri() . '/css/bandeau-canettes.css');
 
-
-
-
     }
 /*hook*/
-/*hook footer*/
+/*initialiser des menu*/
     function planty_menus() {
 
         $locations = array(
@@ -32,8 +29,8 @@
     
     add_action( 'init', 'planty_menus' );
 
-/*hook admin menu 'primary'*/
-add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
+/*hook filter admin menu 'primary'*/
+
     function add_admin_link_to_menu($items, $args) {
         if (is_user_logged_in() && current_user_can('administrator') && $args->theme_location == 'primary')
          {$admin_url = admin_url();
@@ -43,8 +40,10 @@ add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
         return $items;
     }
     
+add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
 
-/*short */
+
+/*short code */
 
 add_shortcode('bandeau_canette','bandeau_canette_func');
     function bandeau_canette_func($atts)
@@ -74,7 +73,6 @@ add_shortcode('bandeau_canette','bandeau_canette_func');
                                     <figure  class='position_<?php echo ($compteur);?> hauteur<?php echo ($hauteur);?>'>
                                         <img src= <?php echo $atts['src'] ;?> class='img_bandeau'>
                                     </figure>                                       
-                            <? endif;?>
                     <?php endfor;?>
                                 </div>
                             </div>
