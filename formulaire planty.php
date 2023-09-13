@@ -1,3 +1,9 @@
+
+        <!DOCTYPE html>
+<html lang="fr">
+	<head>
+<title>formulaire precommande planty</title>
+	</head>
 <div>
         <h1>COMMANDER</h1>
     </div>
@@ -12,7 +18,7 @@
 
                 <article class="Fruits">
                     <div class="container fraise">
-                        <img src=" http://localhost/planty/wp-content/uploads/2023/08/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png">
+                        <img src=" http://localhost/planty/wp-content/uploads/2023/08/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png" alt="image_fraise">
                       
                           <h3> FRAISE</h3>
                        
@@ -23,9 +29,9 @@
                                 
                                
                                     
-                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
+                                    <a href="javascript:;" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
                                    <input class="quantity" min="0" name="quantity_fraise" value="0" type="number">
-                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</a>                                                       
+                                    <a href="javascript:;" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="bouton-select-moin" >-</a>                                                       
                               
                             </div>
                         </div>
@@ -36,7 +42,7 @@
                 </article>
                 <article class="Fruits">
                     <div class="container pamplemousse">
-                        <img src="http://localhost/planty/wp-content/uploads/2023/08/estudio-bloom-tOitjphtIXU-unsplash-1.png">
+                        <img src="http://localhost/planty/wp-content/uploads/2023/08/estudio-bloom-tOitjphtIXU-unsplash-1.png" alt="image_pamplemousse">
                     
                             <h3> PAMPLEMOUSSE</h3>
                        
@@ -45,9 +51,9 @@
                         <div class="larg_nbr_fruit" >
                             <div class="number-input">
                                  
-                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
-                                   <input class="quantity" min="0" name="quantity_pamplemousse" value="0" type="number">
-                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</a>   
+                                    <a href="javascript:;" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
+                                   <input id="quantity_pamplemousse" class="quantity" min="0" name="quantity_pamplemousse" value="0" type="number">
+                                    <a href="javascript:;" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="bouton-select-moin" >-</a>   
                                 
                             </div>
                         </div>
@@ -58,7 +64,7 @@
                 </article>
                 <article class="Fruits">
                     <div class="container framboise">
-                        <img src="http://localhost/planty/wp-content/uploads/2023/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png">                        
+                        <img src="http://localhost/planty/wp-content/uploads/2023/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png" alt="image_framboise">                        
                         <h3> FRAMBOISE</h3>                       
                     </div>
                     <div class="valid_quantite">
@@ -66,9 +72,9 @@
                             <div class="number-input">
 
                                 
-                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
+                                    <a href="javascript:;" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
                                    <input class="quantity" min="0" name="quantity_framboise" value="0" type="number">
-                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</a>   
+                                    <a href="javascript:;" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="bouton-select-moin" >-</a>   
                                 
                             </div>
                         </div>
@@ -79,7 +85,7 @@
                 </article>           
                 <article class="Fruits">
                     <div class="container citron">
-                        <img src="http://localhost/planty/wp-content/uploads/2023/08/estudio-bloom-ezqnxsqUZ80-unsplash-1.png">
+                        <img src="http://localhost/planty/wp-content/uploads/2023/08/estudio-bloom-ezqnxsqUZ80-unsplash-1.png" alt="image_citron">
                         <h3> CITRON</h3>                       
                     </div>
                     <div class="valid_quantite">
@@ -88,9 +94,9 @@
                                 
                               
                                     
-                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
+                                    <a href="javascript:;" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="bouton-select-plus">+</a>                                
                                    <input class="quantity" min="0" name="quantity_citron" value="0" type="number">
-                                    <a href='#'onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="bouton-select-moin" >-</a>                                                       
+                                    <a href="javascript:;" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="bouton-select-moin" >-</a>                                                       
                               
                             </div>
                         </div>
@@ -135,7 +141,7 @@
                 [text* adresse]</label>
         
                 <label> Code postal
-                [number* code-postal max:99999 maxlenght=5 placeholder="26600"]</label>
+                [number* code-postal max:99999 maxlenght=5 ]</label>
         
                 <label> Ville
                 [text* ville]</label>
