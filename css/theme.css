@@ -568,7 +568,12 @@ flex-direction: column;
    right: 170px;
    bottom: 290px;
 
-   }        
+   }  
+     .bloc_info_livraison input{
+     
+      width:400px;
+      
+      }
 }
 
 @media (max-width: 500px){
@@ -626,7 +631,13 @@ height: 71px;
    bottom: 290px;
 
    }  
+   .bloc_info_livraison input{
+     
+      width:310px;
+      
+      }
 }
+
 @media (max-width: 1050px){
 
 .deplace-fleur figure{
